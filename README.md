@@ -146,7 +146,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/thenileshnishad/daybook.git
+   git clone https://github.com/abhi8124/daybook.git
 
    cd daybook/backend
    ```
