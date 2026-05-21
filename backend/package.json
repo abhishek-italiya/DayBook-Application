@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thenileshnishad/daybook.git"
+    "url": "git+https://github.com/abhishek-italiya/DayBook-Application.git"
   },
   "keywords": [
     "mern",
@@ -18,12 +18,12 @@
     "task",
     "management"
   ],
-  "author": "Nilesh Kumar Nishad",
+  "author": "Abhishek Italiya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thenileshnishad/daybook/issues"
+    "url": "https://github.com/abhishek-italiya/DayBook-Application/issues"
   },
-  "homepage": "https://github.com/thenileshnishad/daybook#readme",
+  "homepage": "https://day-book-application.vercel.app",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
