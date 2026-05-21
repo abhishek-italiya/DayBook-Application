@@ -57,7 +57,7 @@ const Terms = () => {
         <p className="text-lg text-center">
           Have questions about these Terms? Reach out to us at:{" "}
           <a href="mailto:italiyaabhi@gmail.com" className="text-blue-600 hover:underline">
-            italiyaabhi@gmail.com && utsavshyani@gmail.com
+            italiyaabhi@gmail.com
           </a>
         </p>
       </div>
