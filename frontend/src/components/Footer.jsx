@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* GitHub */}
           <span
-            onClick={() => window.open("https://github.com/italiyaabhi", "_blank")}
+            onClick={() => window.open("https://github.com/abhishek-italiya", "_blank")}
             className="hover:text-white transition cursor-pointer"
           >
             <Github size={20} />
@@ -38,7 +38,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <span
-            onClick={() => window.open("https://linkedin.com/in/italiyaabhi", "_blank")}
+            onClick={() => window.open("https://www.linkedin.com/in/abhishek-italiya-765a20298", "_blank")}
             className="hover:text-white transition cursor-pointer"
           >
             <Linkedin size={20} />
