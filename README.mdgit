@@ -1,0 +1,1 @@
+"# DayBook-Application"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/abhi8124/DayBook-Application.gitgit push -u origin main

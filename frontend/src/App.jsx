@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 
 import Layout from "./components/Layout";
 import Terms from "./pages/Terms";
-import PrivacyPolicy from "./pages/PrivacyPolicy";  // ✅ Import PrivacyPolicy
+import PolicyPage from "./pages/PolicyPage";  // ✅ Import PrivacyPolicy
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -28,7 +28,7 @@ const App = () => {
             <Route path="entries" element={<Entries />} />
             <Route path="about" element={<About />} />
             <Route path="terms" element={<Terms />} />
-            <Route path="privacy" element={<PrivacyPolicy />} />  {/* ✅ Add Privacy Route */}
+            <Route path="privacy" element={<PolicyPage />} />  {/* ✅ Add Privacy Route */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

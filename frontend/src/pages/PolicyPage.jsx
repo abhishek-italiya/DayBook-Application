@@ -1,4 +1,4 @@
-const PrivacyPolicy = () => {
+const PolicyPage = () => {
   return (
     <div className="flex justify-center px-4 sm:px-6 lg:px-10 my-10">
       <div className="w-full max-w-3xl bg-base-200 shadow-xl hover:shadow-2xl rounded-3xl p-6 md:p-8">
@@ -70,4 +70,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default PolicyPage;
