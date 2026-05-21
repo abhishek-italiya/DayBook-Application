@@ -2,9 +2,7 @@
 
 DayBook is a secure and user-friendly personal journaling app built with the MERN stack (MongoDB, Express, React, and Node.js). It allows users to easily log in, write, view, and manage their daily entries while ensuring a seamless, distraction-free, and private experience. Prioritizing simplicity, security, and privacy, DayBook helps you document your thoughts and memories with confidence and peace of mind.
 
-[Live Demo](https://daybook-mern.vercel.app)
 
-Head over to the [Vercel deployment branch](https://github.com/thenileshnishad/daybook/tree/deployment) if you want to see how the deployment is set up (you can find the relevant details in their `package.json` file).
 
 ---
 
@@ -148,7 +146,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/thenileshnishad/daybook.git
+   git clone https://github.com/abhi8124/daybook.git
 
    cd daybook/backend
    ```
@@ -165,8 +163,7 @@ Follow these steps to set up the project locally:
 
    ```env
    PORT=3000
-   MONGO_URI=mongodb://localhost:27017/daybook
-   JWT_SECRET=rushB@5678
+   MONGO_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/mydatabase   
    FRONTEND_URL=http://localhost:5173
    ```
 
