@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { removeUserInfo } from "../../redux/features/userSlice";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import apiSlice from "../../redux/api/apiSlice";
 
 const Logout = ({ close }) => {
   const [logout, { isLoading }] = useLogoutMutation();
@@ -13,6 +14,7 @@ const Logout = ({ close }) => {
     try {
       const response = await logout().unwrap();
       dispatch(removeUserInfo());
+      dispatch(apiSlice.util.resetApiState());
       navigate("/");
       close();
       toast.success(response.message);

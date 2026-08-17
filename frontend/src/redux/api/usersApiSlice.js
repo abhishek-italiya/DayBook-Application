@@ -23,6 +23,7 @@ const usersApiSlice = apiSlice.injectEndpoints({
         url: "/auth/logout",
         method: "POST",
       }),
+      invalidatesTags: ["User"],
     }),
 
     profile: builder.query({

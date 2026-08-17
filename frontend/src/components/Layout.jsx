@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { useProfileQuery } from "../redux/api/usersApiSlice";
 import { useDispatch } from "react-redux";
 import { removeUserInfo, userInfo } from "../redux/features/userSlice";
-import Loader from "./Loader";
 import NavLinks from "./navbar/NavLinks";
 import SearchBox from "./navbar/SearchBox";
 import logo from "../assets/logo.svg";
@@ -13,7 +12,6 @@ import logo from "../assets/logo.svg";
 const Layout = () => {
   const { data: profile, isError, isLoading } = useProfileQuery();
   const dispatch = useDispatch();
-  const [isReady, setIsReady] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const toggle = () => setIsDrawerOpen(!isDrawerOpen);
 
@@ -24,23 +22,8 @@ const Layout = () => {
       } else if (isError) {
         dispatch(removeUserInfo());
       }
-      setIsReady(true);
     }
   }, [profile, dispatch, isError, isLoading]);
-
-  if (!isReady) {
-    const getTheme = localStorage.getItem("theme")
-      ? localStorage.getItem("theme")
-      : "dark";
-    return (
-      <div
-        data-theme={getTheme}
-        className="flex justify-center items-center min-h-[calc(100dvh)]"
-      >
-        <Loader />
-      </div>
-    );
-  }
 
   return (
     <div className="drawer">

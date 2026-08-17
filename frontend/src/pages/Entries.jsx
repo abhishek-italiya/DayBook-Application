@@ -13,19 +13,19 @@ const Entries = () => {
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get("search") || "";
 
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
-
   const { data: getEntries, isLoading: isLoadingEntries } = useGetEntriesQuery(
     undefined,
-    { skip: searchQuery.length > 0 }
+    { skip: !user || searchQuery.length > 0 }
   );
 
   const { data: searchResult, isLoading: isLoadingSearch } =
     useSearchEntryQuery(searchQuery, {
-      skip: searchQuery.length === 0,
+      skip: !user || searchQuery.length === 0,
     });
+
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
 
   if (isLoadingEntries || isLoadingSearch) {
     return (
